@@ -4,7 +4,7 @@
   "description": "sample project",
   "main": "index.js",
   "scripts": {
-    "start":"node app.js"
+    "start":"node calc.js"
   },
   "author": "sreekutty",
   "license": "ISC",

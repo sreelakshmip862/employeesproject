@@ -11,7 +11,7 @@ app.post('/read',(req,res)=>{
     var getName=req.body.name
    var getRoll=req.body.rollno
    res.json({"name":getName,"rollno":getRoll})
-    //res.send("welcome to home")
+   // res.send("welcome to home")
     })
     
 app.listen(process.env.PORT||3000,()=>{

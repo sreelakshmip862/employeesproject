@@ -6,6 +6,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
  
 
 app.use(bodyParser.json())
+app.get('/',(req,res)=>{
+    res.send("welcome to my website")
+})
 
 app.post('/add',(req,res)=>{
     var getNum1=parseFloat(req.body.no1)
@@ -15,6 +18,6 @@ var x=getNum1+getNum2
     //res.send("welcome to home")
     })
     
-app.listen(3000,()=>{
+app.listen(process.env.PORT||3000,()=>{
 console.log("server started at  http://localhost:3000/")
 })
