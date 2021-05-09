@@ -3,7 +3,7 @@ var bodyParser = require('body-parser')
 var mongoose=require('mongoose')
 var {employeeModel}=require('./models/employeeModel')
 const { studentModel } = require('./models/studentModel')
-mongoose.connect("mongodb+srv://sreelakshmi:sreelachu96@cluster0.nrm6p.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{useNewUrlParser:true})
+mongoose.connect("mongodb://mongo:27017/docker-node-mongo",{useNewUrlParser:true})
 let app=express()
 app.use(bodyParser.urlencoded({ extended: false }))
  

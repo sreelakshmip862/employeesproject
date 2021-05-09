@@ -1,5 +1,5 @@
 FROM node:14.16.0
-WORKDIR /usr/src/myapp
+WORKDIR /usr/src/employee
 COPY package*json ./
 RUN npm install
 COPY . .
