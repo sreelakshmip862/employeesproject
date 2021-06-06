@@ -20,6 +20,22 @@ app.post('/read',(req,res)=>{
 
  
     })
+    app.post('/search',async(req,res)=>{
+        
+       try{
+           var result=studentModel.find(req.body)
+           res.json(result)
+
+       }
+       catch(error)
+       {
+         res.json({"status":"error"})
+       }
+    
+     
+        })
+
+    
     
 app.listen(process.env.PORT||3000,()=>{
 console.log("server started at  http://localhost:3000/")
